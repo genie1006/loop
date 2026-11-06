@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>awards > loop</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style_a.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="icon" href="../img/icon.png">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <header class="header clearfix">
+                        <h1 class="logo">
+                            <a href="../index.html"><img src="./img/logo.png" alt="loop로고이미지"></a>
+                        </h1>
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="../index.html#chart">차트</a></li>
+                                <li><a href="../genre/index.html">장르</a></li>
+                                <li><a href="../playlist/index.html">플레이리스트</a></li>
+                                <li><a href="../signal/index.html">loop 시그널</a></li>
+                                <li><a href="./index.html">loop 어워드</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <span class="sch">
+                                <input type="text" id="text" class="input_text" onkeydown="enterSearch();"
+                                    placeholder="검색">
+                            </span>
+                            <button class="sch_smit" onclick="myFun()">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="m_nav">
+                            <span></span>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </header>
+        <div id="top">
+            <button>Top</button>
+        </div>
+        <section id="awards">
+            <div class="container">
+                <div class="row">
+                    <section class="awards">
+                        <h3><em>loop </em>Awards</h3>
+                        <div class="schedule">
+                            <span>투표일정</span>
+                            <span>2026년 05월 26일 ~ 2026년 06월 19일</span>
+                        </div>
+                        <div class="contents">
+                            <article class="best_sing">
+                                <h4>BEST 음악상</h4>
+                                <div class="box">
+                                    <div class="left">
+                                        <img src="./img/sing1_yk.jpg" alt="영케이_이미지">
+                                        <div class="info">
+                                            <span class="num"><em class="percent">1위</em>70%</span>
+                                            <span class="sing">natural</span>
+                                            <span class="singer">영케이</span>
+                                            <div class="gauge"></div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="info">
+                                            <span class="num"><em>2위</em>25%</span>
+                                            <span class="sing">별 떨어진다</span>
+                                            <span class="singer">도경수</span>
+                                            <div class="gauge"></div>
+                                        </div>
+                                        <img src="./img/sing2_do.jpg" alt="도경수_이미지">
+                                    </div>
+                                </div>
+                                <button class="more">투표하기</button>
+                            </article>
+                            <article class="best_record">
+                                <h4>BEST 앨범상</h4>
+                                <div class="box">
+                                    <div class="left">
+                                        <img src="./img/record1_ty.jpg" alt="태연_이미지">
+                                        <div class="info">
+                                            <span class="num"><em class="percent">1위</em>49%</span>
+                                            <span class="sing">My Voice</span>
+                                            <span class="singer">태연</span>
+                                            <div class="gauge"></div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="info">
+                                            <span class="num"><em>2위</em>40%</span>
+                                            <span class="sing">RUDE!</span>
+                                            <span class="singer">하츠투하츠</span>
+                                            <div class="gauge"></div>
+                                        </div>
+                                        <img src="./img/record2_h2h.jpg" alt="하츠투하츠_이미지">
+                                    </div>
+                                </div>
+                                <button class="more">투표하기</button>
+                            </article>
+                            <article class="best_singer">
+                                <h4>BEST 가수상</h4>
+                                <div class="box">
+                                    <div class="left">
+                                        <img src="./img/singer1_iu.jpg" alt="아이유_이미지">
+                                        <div class="info">
+                                            <span class="num"><em class="percent">1위</em>65%</span>
+                                            <span class="singer">아이유</span>
+                                            <div class="gauge"></div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="info">
+                                            <span class="num"><em>2위</em>33%</span>
+                                            <span class="singer">블랙핑크</span>
+                                            <div class="gauge"></div>
+                                        </div>
+                                        <img src="./img/singer2_blackpink.jfif" alt="블랙핑크_이미지">
+                                    </div>
+                                </div>
+                                <button class="more">투표하기</button>
+
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <footer class="footer clearfix">
+                        <h2 class="f_logo"><a href="./index.html"><img src="./img/footerlogo.png" alt="하단로고이미지"></a>
+                        </h2>
+                        <div class="f_center">
+                            <menu class="f_nav">
+                                <ul>
+                                    <li><a href="#">이용약관</a></li>
+                                    <li><a href="#">개인정보처리방침</a></li>
+                                    <li><a href="#">이메일주소무단수집거부</a></li>
+                                    <li><a href="#">제휴문의</a></li>
+                                    <li><a href="#">고객센터</a></li>
+                                </ul>
+                            </menu>
+                            <p class="f_copy">
+                                COPYRIGHTⓒLOOP MUSIC CORP. ALL RIGHTS RESERVED.
+                            </p>
+                        </div>
+                        <div class="f_sns">
+                            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                        </div>
+
+                    </footer>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        // nav
+        // m_nav
+        $(".m_nav").click(function () {
+            $(".nav").toggleClass("on");
+            $(".m_nav").toggleClass("on");
+            $(".search").toggleClass("on");
+        })
+
+        // 검색창
+        function enterSearch() {
+            if (event.keyCode == 13) {
+                myFun();
+            }
+        }
+        function myFun() {
+            let x = document.getElementById("text").value;;
+            console.log(x)
+            window.open("https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=" + x);
+        }
+
+        // resize
+        let winW;
+        winSize();
+        function winSize() {
+            winW = $(window).width();
+            $(".nav").removeClass("on");
+            $(".search").removeClass("on");
+            $(".m_nav").removeClass("on");
+        }
+        $(window).resize(function () {
+            winSize();
+        })
+        // top
+        $("#top button").click(function () {
+            $("html, body").stop().animate({ scrollTop: 0 }, 600);
+        });
+
+
+
+        // 더보기 버튼
+        $(".awards .more").click(function() {
+            alert("로그인이 필요합니다.");
+        });
+
+        $(".f_nav ul li a").click(function (e) {
+            e.preventDefault();
+            alert("상업적 이용이 아닌 포트폴리오 용으로 제작되었습니다.");
+        });
+
+    // 메인에서 서브 이동시 스크롤
+        $(function() {
+            if (location.hash) {
+                let target = $(location.hash);
+                $("html, body").animate({ scrollTop: target.offset().top }, 600);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
